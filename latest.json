@@ -1,34 +1,31 @@
 {
   "product": "GateVision Professional",
   "channel": "stable",
-  "latest_version": "2.0.285",
-  "release": "FC1.285",
-  "fc_build": 285,
-  "build": 318,
+  "latest_version": "2.0.287",
+  "release": "FC1.287",
+  "fc_build": 287,
+  "build": 320,
   "published_at": "2026-07-18",
   "mandatory": false,
-  "download_url": "https://github.com/kj0000k5-lab/gatevision-updates/releases/download/FC1.285/GateVision_Professional_2_0_Windows_Release_FC1_285.zip",
-  "sha256": "daf6f779444a73d578babe03bf529c56ef8b26862bc49b9a21f97719090e328d",
-  "package_size_bytes": 415507605,
+  "download_url": "https://github.com/kj0000k5-lab/gatevision-updates/releases/download/FC1.287/GateVision_Professional_2_0_Windows_Release_FC1_287.zip",
+  "sha256": "97fd17c054ab188911966adb4d98c2f79b69f9fd51c9273a1f08a9791bc79d5b",
+  "package_size_bytes": 415530040,
   "release_notes": [
-    "إصلاح عدم ظهور صورة اللوحة داخل نافذة Live Vehicle Card بعد التثبيت أو التحديث.",
-    "إعادة ربط مسارات الصور القديمة تلقائيًا بمجلد بيانات GateVision الحالي بدل فقدان الصورة عند تغير مسار التثبيت.",
-    "البحث عن أحدث صورة محفوظة داخل Vehicles/<plate>/Events عند غياب Plate.jpg أو وجود مسار قديم في قاعدة البيانات.",
-    "إنشاء صورة CustomTkinter داخل خيط الواجهة الرئيسي لمنع ظهور مربع أسود فارغ.",
-    "الحفاظ على نظام التحديث التلقائي وبيانات العميل وإصلاحات FC1.284 كاملة."
+    "إصلاح عودة صورة اللوحة في Live Vehicle Card بعد الانتقال من بطاقة تحتوي صورة إلى بطاقة بلا صورة ثم العودة إلى بطاقة تحتوي صورة.",
+    "استخدام سطح صورة ثابت داخل Live Vehicle Card بدل التحويل إلى حالة نصية فارغة، لمنع اختفاء المعاينة بعد تبديل البطاقات.",
+    "إلغاء طلب العرض المكرر عند اختيار بطاقة سجل، مع حماية إعادة الرسم من الطلبات القديمة.",
+    "اختبار دورة التحديث التلقائي من FC1.286 إلى FC1.287، بما يشمل شريط التقدم والتحقق من SHA-256 والتثبيت وإعادة التشغيل."
   ],
   "release_notes_ar": [
-    "إصلاح عدم ظهور صورة اللوحة داخل نافذة Live Vehicle Card بعد التثبيت أو التحديث.",
-    "إعادة ربط مسارات الصور القديمة تلقائيًا بمجلد بيانات GateVision الحالي بدل فقدان الصورة عند تغير مسار التثبيت.",
-    "البحث عن أحدث صورة محفوظة داخل Vehicles/<plate>/Events عند غياب Plate.jpg أو وجود مسار قديم في قاعدة البيانات.",
-    "إنشاء صورة CustomTkinter داخل خيط الواجهة الرئيسي لمنع ظهور مربع أسود فارغ.",
-    "الحفاظ على نظام التحديث التلقائي وبيانات العميل وإصلاحات FC1.284 كاملة."
+    "إصلاح عودة صورة اللوحة في Live Vehicle Card بعد الانتقال من بطاقة تحتوي صورة إلى بطاقة بلا صورة ثم العودة إلى بطاقة تحتوي صورة.",
+    "استخدام سطح صورة ثابت داخل Live Vehicle Card بدل التحويل إلى حالة نصية فارغة، لمنع اختفاء المعاينة بعد تبديل البطاقات.",
+    "إلغاء طلب العرض المكرر عند اختيار بطاقة سجل، مع حماية إعادة الرسم من الطلبات القديمة.",
+    "اختبار دورة التحديث التلقائي من FC1.286 إلى FC1.287، بما يشمل شريط التقدم والتحقق من SHA-256 والتثبيت وإعادة التشغيل."
   ],
   "release_notes_en": [
-    "Fixed missing plate previews in Live Vehicle Card after installation or upgrade.",
-    "Legacy absolute image paths are automatically rebased to the current GateVision customer-data folder.",
-    "The newest Vehicles/<plate>/Events image is recovered when Plate.jpg is missing or the database path is stale.",
-    "CustomTkinter preview images are now created on the UI thread to prevent blank black preview boxes.",
-    "FC1.284 automatic updates, installer behavior and customer-data preservation remain unchanged."
+    "Fixed Live Vehicle Card plate-image restoration after selecting image, no-image, then image event cards.",
+    "The Live Vehicle Card now keeps one persistent image surface and uses a generated placeholder for events without photos.",
+    "Removed the duplicate selected-record preview request and retained stale-request redraw protection.",
+    "Tests the FC1.286 to FC1.287 automatic update flow, including progress, SHA-256 verification, installation and restart."
   ]
 }
